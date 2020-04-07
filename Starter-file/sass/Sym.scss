@@ -1,0 +1,36 @@
+
+/* start of sym section */
+.sym{
+    // width: 80%;
+    // margin: 0 auto 4%;
+
+
+
+    &__titl {
+        margin-bottom: 2%;
+        color: #1078AD;
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    &__photos {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-column-gap: 4em;
+        align-items: center;
+
+
+    }
+
+    &__card {
+        // margin: 0 auto;
+        padding: 5% 10% 2%;
+        text-align: center;
+        align-items: center;
+        // justify-content: center;
+    }
+
+}
+/* end of sym section */

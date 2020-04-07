@@ -1,0 +1,56 @@
+
+/* start of HeroHeader section */
+.headerHero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    // width: 45%;
+    // height: auto;
+    padding-left: 5%;
+
+    &__Img {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+
+    }
+}
+
+.Content {
+    height: auto;
+    text-align: center;
+    line-height: 2.5em;
+
+    &__title1 {
+        color: #1078AD;
+    }
+
+    &__image {
+        max-width: 20%;
+        height: auto;
+    }
+
+    &__title2 {
+        color: #7F7F7F;
+    }
+
+}
+
+.btn {
+    width: 80%;
+    height: 2em;
+    margin-top: 2%;
+    background: #1078AD;
+    padding: 1%;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* end of HeroHeader section */
