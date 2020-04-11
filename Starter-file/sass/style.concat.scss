@@ -229,9 +229,14 @@ body {
 
       h3 {
         font-weight: 500;
-        color: white;
+        // color: white;
         margin-top: 12%;
-        text-decoration: underline #F4CF1B;
+
+
+        a{
+          text-decoration: underline #F4CF1B;
+          color: white;
+        }
     }
 }
 

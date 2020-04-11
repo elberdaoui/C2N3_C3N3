@@ -151,9 +151,10 @@ body {
       color: #1078AD; }
   .freecall h3 {
     font-weight: 500;
-    color: white;
-    margin-top: 12%;
-    text-decoration: underline #F4CF1B; }
+    margin-top: 12%; }
+    .freecall h3 a {
+      text-decoration: underline #F4CF1B;
+      color: white; }
 
 .test {
   display: flex;
