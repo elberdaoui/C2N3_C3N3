@@ -245,5 +245,86 @@ body {
   border-radius: 7px 7px 0 0; }
 
 /* end of footer section */
+/* start of conseil section */
+.headerconseil {
+  margin-top: 2%; }
+  .headerconseil__title {
+    text-align: center;
+    color: #1078AD; }
+
+.conseil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .conseil__card {
+    padding: 5%; }
+    .conseil__card--pic {
+      max-width: 50%;
+      height: auto;
+      padding-top: 13%; }
+    .conseil__card h3 {
+      color: #1A519E; }
+    .conseil__card:last-child {
+      grid-column: 1 / span 3;
+      grid-row: 3 / 4; }
+
+.home h3 {
+  color: #1A519E;
+  padding-top: 1%; }
+
+.information {
+  width: 100%;
+  background-color: #D0E5F0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%; }
+
+.InfoMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between; }
+  .InfoMain__txt {
+    color: #1078AD;
+    text-align: center; }
+    .InfoMain__txt h1 {
+      font-size: 1.6em;
+      margin-bottom: 1em; }
+    .InfoMain__txt h3 {
+      line-height: 1.9em;
+      color: #1A519E; }
+  .InfoMain__btns {
+    text-align: center; }
+    .InfoMain__btns--btn {
+      background-color: #1078AD;
+      padding: 2.5%;
+      font-size: 1.1em;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px; }
+      .InfoMain__btns--btn a {
+        color: white;
+        text-decoration: none; }
+
+.transmet {
+  width: 100%;
+  color: #1A519E; }
+  .transmet h1 {
+    text-align: center;
+    margin-top: 2.5em;
+    color: #1078AD; }
+
+.trsm {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 4em; }
+
+/* end of conseil section */
 
 /*# sourceMappingURL=style.prefix.css.map */
