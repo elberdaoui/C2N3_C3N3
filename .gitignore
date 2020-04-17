@@ -1,2 +1,12 @@
 /C2N3_C3N3/*
 !/C2N3_C3N3/JS-workshop/
+/.vscode/
+/algorithme/
+/Design/
+/node_modules/
+/Starter-file/
+conseil.html
+index.html
+package.json
+package-lock.json
+README.md
