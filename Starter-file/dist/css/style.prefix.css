@@ -327,5 +327,291 @@ body {
   padding: 4em; }
 
 /* end of conseil section */
+/* start of test section */
+.tribar {
+  width: 60%;
+  height: 0.4em;
+  margin: 0 auto;
+  border-radius: 1em;
+  background-color: #0d5e88;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+  margin-top: 2.5rem;
+}
 
-/*# sourceMappingURL=style.prefix.css.map */
+.tribar__informations, .tribar__questionnaire, .tribar__resultat {
+  border-radius: 50%;
+  background-color: #1078ad;
+  width: 0.8em;
+  height: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tribar__informations span, .tribar__questionnaire span, .tribar__resultat span {
+  margin-top: 4em;
+  font-size: 0.8rem;
+}
+
+.tribar__informations .circle, .tribar__questionnaire .circle, .tribar__resultat .circle {
+  background-color: #1078ad;
+  width: 2em;
+  height: 2em;
+  z-index: 0;
+  position: absolute;
+  display: none;
+  border-radius: 50%;
+}
+
+.tribar__informations .circle .mini-circle, .tribar__questionnaire .circle .mini-circle, .tribar__resultat .circle .mini-circle {
+  border-radius: 50%;
+  background-color: #f4cf1b;
+  width: 0.8em;
+  height: 0.8em;
+  margin: 0.6em;
+}
+
+.preambule {
+  background-color: #96c5dc;
+  text-align: center;
+  padding: 0.5em 1em;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+
+.preambule h1 {
+  color: #1078ad;
+  font-size: 1.3rem;
+}
+
+.preambule hr {
+  width: 60%;
+  border-color: #f4cf1b;
+}
+
+.preambule__top {
+  padding: 0 2em 1em;
+  font-weight: 700;
+  line-height: 1.6em;
+  font-size: 0.8em;
+}
+
+.preambule__bottom {
+  font-weight: 700;
+  line-height: 1.6em;
+  font-size: 0.8em;
+  padding: 1em 2em 2em;
+}
+
+.launch {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.launch__button {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #1078ad;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+  width: 60%;
+  max-width: 600px;
+  background: url(../../../Design/Assets/png/demarrer.png);
+  margin: 1em auto;
+  width: 50%;
+  max-width: 500px;
+  cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.progress__bar {
+  width: 80%;
+  border-radius: 1em;
+  border: 1px solid #1078ad;
+  margin: 0 0.5em;
+  background-color: #e3eff6;
+}
+
+.progress__bar__fill {
+  background-color: #1078ad;
+  width: 0%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.questions {
+  padding: 1.5em 2em;
+  display: none;
+}
+
+.questions h3 {
+  color: #7f7f7f;
+  margin-bottom: 3em;
+}
+
+.questions__form {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions__form .box {
+  border: 2px solid #1078AD;
+  border-radius: 5px;
+  background-color: #6faecd;
+  width: 165px;
+  text-align: center;
+  padding: .5rem;
+  margin: 0 1rem;
+}
+
+.questions__form .box:hover {
+  background-color: yellow;
+}
+
+.questions__form .box:active {
+  background-color: #E5E500;
+}
+
+.questions__form #numerique {
+  border: 2px solid #1078AD;
+  width: 15rem;
+  border-radius: 6px;
+  display: block;
+}
+
+.questions__form #numerique:active {
+  border: 2px solid #E5E500;
+}
+
+.questions__form input {
+  margin: 0.8em 0;
+  background-color: white;
+  display: none;
+}
+
+.anti {
+  text-align: center;
+  background-color: #f4cf1b;
+  padding: 0.5em 2em;
+  margin-top: 1em;
+  display: none;
+}
+
+.anti__text {
+  line-height: 1.8em;
+  font-size: 1rem;
+  padding: 0 2em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons__previous {
+  display: none;
+}
+
+.buttons button {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #1078ad;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+  width: 60%;
+  max-width: 600px;
+  background: url(../../../Design/Assets/png/demarrer.png);
+  margin: 1em auto;
+  width: 40%;
+  margin-top: 3em;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-radio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-radio .mini {
+  display: flex;
+  width: 195px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-radio .mini input {
+  margin: 1em 20%;
+}
+
+.resultat {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  display: none;
+}
+
+.resultat h4 {
+  color: #369d53;
+}
+
+.resultat__block {
+  background-color: #1078ad;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.resultat__block h2 {
+  color: white;
+}
+
+.resultat__block p {
+  color: #f4cf1b;
+  line-height: 1.5em;
+}
+
+.resultat__reprendre {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #1078ad;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+  width: 60%;
+  max-width: 600px;
+  background: url(../../../Design/Assets/png/demarrer.png);
+  margin: 1em auto;
+  width: 50%;
+  max-width: 500px;
+  cursor: pointer;
+}
+/* end of test section */

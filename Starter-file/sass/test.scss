@@ -1,0 +1,233 @@
+@import "variables";
+
+.tribar {
+	width: 60%;
+	height: 0.4em;
+	margin: 0 auto;
+	border-radius: 1em;
+	background-color: darken($primary, 8%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4em;
+	margin-top: 2.5rem;
+	&__informations,
+	&__questionnaire,
+	&__resultat {
+		border-radius: 50%;
+		background-color: $primary;
+		width: 0.8em;
+		height: 0.8em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		span {
+			margin-top: 4em;
+			font-size: 0.8rem;
+		}
+		.circle {
+			background-color: $primary;
+			width: 2em;
+			height: 2em;
+			z-index: 0;
+			position: absolute;
+			display: none;
+			border-radius: 50%;
+			.mini-circle {
+				border-radius: 50%;
+				background-color: $secondary;
+				width: 0.8em;
+				height: 0.8em;
+				margin: 0.6em;
+			}
+		}
+	}
+}
+
+.preambule {
+	background-color: $secondary2;
+	text-align: center;
+	padding: 0.5em 1em;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 1em;
+	h1 {
+		color: $primary;
+		font-size: 1.3rem;
+	}
+	hr {
+		width: 60%;
+		border-color: $secondary;
+	}
+	&__top {
+		padding: 0 2em 1em;
+		font-weight: 700;
+		line-height: 1.6em;
+		font-size: 0.8em;
+	}
+	&__bottom {
+		font-weight: 700;
+		line-height: 1.6em;
+		font-size: 0.8em;
+		padding: 1em 2em 2em;
+	}
+}
+
+.launch {
+	text-align: center;
+	margin-top: 1em;
+	&__button {
+		@include btn;
+		width: 50%;
+		max-width: 500px;
+		cursor: pointer;
+	}
+}
+
+.progress {
+	display: flex;
+	justify-content: center;
+	display: none;
+	&__bar {
+		width: 80%;
+		border-radius: 1em;
+		border: 1px solid $primary;
+		margin: 0 0.5em;
+		background-color: lighten($secondary2, 20%);
+		&__fill {
+			background-color: $primary;
+			width: 0%;
+			height: 100%;
+			border-radius: 1em;
+		}
+	}
+}
+
+.questions {
+	padding: 1.5em 2em;
+	display: none;
+	h3 {
+		color: $neutral2;
+		margin-bottom: 3em;
+	}
+	&__form {
+		text-align: center;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		.box {
+      border: 2px solid #1078AD;
+      border-radius: 5px;
+      background-color: #6faecd;
+      width: 165px;
+    text-align: center;
+    padding: .5rem;
+    margin: 0 1rem;
+		&:hover{
+		 background-color: yellow}
+		 &:active{
+			 background-color: #E5E500;}
+		 	}
+
+         #numerique{
+        border: 2px solid #1078AD;
+        width: 15rem;
+        border-radius: 6px;
+				&:active{
+				border: 2px solid #E5E500;}
+			}
+
+		input {
+			margin: 0.8em 0;
+			background-color: white;
+			display: none;
+		}
+	}
+}
+
+.anti {
+	text-align: center;
+	background-color: $secondary;
+	padding: 0.5em 2em;
+	margin-top: 1em;
+	display: none;
+	&__text {
+		line-height: 1.8em;
+		font-size: 1rem;
+		padding: 0 2em;
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	&__previous {
+		display: none;
+	}
+
+	button {
+		@include btn;
+		width: 40%;
+		margin-top: 3em;
+		font-size: 0.9em;
+		cursor: pointer;
+	}
+
+}
+
+.invisible {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-radio{
+	display: flex;
+	justify-content: space-evenly;
+	.mini{
+		display: flex;
+		width: 195px;
+		justify-content: center;
+		align-items: center;
+		input{
+			margin: 1em 20%;
+		}
+	}
+
+}
+
+
+.resultat{
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	display: none;
+	h4{
+		color: $neutral3;
+	}
+	&__block{
+		background-color: $primary;
+		padding: 1em;
+		border-radius: 1em;
+		h2{
+			color: $neutral4;
+		}
+		p{
+			color: $secondary;
+			line-height: 1.5em;
+		}
+	}
+	&__reprendre{
+		@include btn;
+		width: 50%;
+		max-width: 500px;
+		cursor: pointer;
+	}
+}
